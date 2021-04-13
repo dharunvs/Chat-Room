@@ -1,0 +1,134 @@
+/* .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px;
+  min-height: 30rem;
+}
+form {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+.name-field {
+  margin-bottom: 40px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.render-chat {
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 3px 24px -8px rgba(0, 0, 0, 0.75);
+}
+
+h3 {
+  color: #2f72da;
+}
+
+span {
+  color: black;
+} */
+
+.card {
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.render-chat {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.render-chat h1 {
+  background-color: purple;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.render-chat .chat-window {
+  height: 100%;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.render-chat .chat-window::-webkit-scrollbar {
+  width: 12px;
+}
+
+.render-chat .chat-window::-webkit-scrollbar-thumb {
+  background-color: purple;
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 7fr 1fr;
+  background-color: red;
+}
+
+input,
+button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+}
+
+.name-field {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.name-field::placeholder {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.message-field {
+  padding-left: 10px;
+  background-color: rgb(255, 211, 255);
+}
+
+.message-field::placeholder {
+  color: black;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.chat-element {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 5px;
+}
+
+.chat-element .chat-element-name {
+  width: 8vw;
+  color: purple;
+  font-weight: bold;
+}
+
+.chat-element .chat-element-message {
+  width: 100%;
+}
